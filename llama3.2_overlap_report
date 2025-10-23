@@ -1,0 +1,18 @@
+📊 LLAMA3.2:1B OVERLAP REPORT
+================================================================================
+
+🔧 Configuration: size300_overlap50
+   Accuracy: 85.00%
+   Points: 85.0/100.0
+
+🔧 Configuration: size300_overlap100
+   Accuracy: 70.00%
+   Points: 70.0/100.0
+
+🔧 Configuration: size300_overlap150
+   Accuracy: 85.00%
+   Points: 85.0/100.0
+
+🏆 BEST CONFIGURATION: size300_overlap50
+   Accuracy: 85.00%
+   Points: 85.0/100.0

@@ -1,0 +1,345 @@
+{
+  "model": "llama3.2:1b",
+  "test_type": "optimal_configuration_final",
+  "configuration": {
+    "chunk_size": 300,
+    "overlap": 50,
+    "config_name": "size300_overlap50"
+  },
+  "results": {
+    "correct_count": 34,
+    "total_questions": 40,
+    "accuracy": 85.0,
+    "points_earned": 85.0,
+    "total_points": 100.0,
+    "average_time": 6.13794714808464,
+    "total_time": 245.51788592338562
+  },
+  "detailed_results": [
+    {
+      "question_id": 1,
+      "question": "T/F: DRS allows a driver within one second of the car ahead to open a rear-wing flap in designated zones to reduce drag.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: DRS allows a driver within one second of the ...\n\ud83d\udd0d Retrieving chunks for query: T/F: DRS allows a driver within one second of the ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 2,
+      "question": "T/F: The safety car is deployed to bunch the field and slow cars while incidents are cleared.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: The safety car is deployed to bunch the field...\n\ud83d\udd0d Retrieving chunks for query: T/F: The safety car is deployed to bunch the field...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 3,
+      "question": "T/F: Parc ferm\u00e9 restricts setup changes after the start of qualifying until the race.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Parc ferm\u00e9 restricts setup changes after the ...\n\ud83d\udd0d Retrieving chunks for query: T/F: Parc ferm\u00e9 restricts setup changes after the ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 4,
+      "question": "T/F: The halo device is a driver head-protection structure designed to deflect debris.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: The halo device is a driver head-protection s...\n\ud83d\udd0d Retrieving chunks for query: T/F: The halo device is a driver head-protection s...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 5,
+      "question": "T/F: In qualifying, Q1 eliminates the five slowest drivers, Q2 eliminates five more, and Q3 decides the top ten grid positions.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: In qualifying, Q1 eliminates the five slowest...\n\ud83d\udd0d Retrieving chunks for query: T/F: In qualifying, Q1 eliminates the five slowest...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 6,
+      "question": "T/F: A fastest-lap bonus point is awarded only if the driver finishes in the top ten.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A fastest-lap bonus point is awarded only if ...\n\ud83d\udd0d Retrieving chunks for query: T/F: A fastest-lap bonus point is awarded only if ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 7,
+      "question": "T/F: The formation lap lets drivers warm tyres/brakes and check systems before the start.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: The formation lap lets drivers warm tyres/bra...\n\ud83d\udd0d Retrieving chunks for query: T/F: The formation lap lets drivers warm tyres/bra...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 8,
+      "question": "T/F: A drive-through penalty requires a car to pass through the pit lane without stopping.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A drive-through penalty requires a car to pas...\n\ud83d\udd0d Retrieving chunks for query: T/F: A drive-through penalty requires a car to pas...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 9,
+      "question": "T/F: A stop-go penalty requires a stationary stop in the pit box before rejoining.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A stop-go penalty requires a stationary stop ...\n\ud83d\udd0d Retrieving chunks for query: T/F: A stop-go penalty requires a stationary stop ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 10,
+      "question": "T/F: Modern F1 power units are hybrid, combining an internal combustion engine with energy recovery systems.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Modern F1 power units are hybrid, combining a...\n\ud83d\udd0d Retrieving chunks for query: T/F: Modern F1 power units are hybrid, combining a...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 11,
+      "question": "T/F: Constructors\u2019 Championship points are the sum of both team drivers\u2019 race points.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Constructors\u2019 Championship points are the sum...\n\ud83d\udd0d Retrieving chunks for query: T/F: Constructors\u2019 Championship points are the sum...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 12,
+      "question": "T/F: Wet weather can force teams onto intermediate or full wet tyres, changing pit strategy.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Wet weather can force teams onto intermediate...\n\ud83d\udd0d Retrieving chunks for query: T/F: Wet weather can force teams onto intermediate...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 13,
+      "question": "T/F: Under the Safety Car, overtaking is prohibited until the control line at the restart.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Under the Safety Car, overtaking is prohibite...\n\ud83d\udd0d Retrieving chunks for query: T/F: Under the Safety Car, overtaking is prohibite...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 14,
+      "question": "T/F: A red flag suspends the session; cars may return to the pit lane and can change tyres.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A red flag suspends the session; cars may ret...\n\ud83d\udd0d Retrieving chunks for query: T/F: A red flag suspends the session; cars may ret...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 15,
+      "question": "T/F: Double-waved yellow flags require drivers to slow significantly and be prepared to stop; qualifying laps are typically invalidated.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Double-waved yellow flags require drivers to ...\n\ud83d\udd0d Retrieving chunks for query: T/F: Double-waved yellow flags require drivers to ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 16,
+      "question": "T/F: Breaking parc ferm\u00e9 rules can force a team to start from the pit lane.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Breaking parc ferm\u00e9 rules can force a team to...\n\ud83d\udd0d Retrieving chunks for query: T/F: Breaking parc ferm\u00e9 rules can force a team to...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 17,
+      "question": "T/F: DRS is allowed during the first two racing laps after a start or safety-car restart.",
+      "expected": "FALSE",
+      "model_response": "TRUE",
+      "correct": false,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: DRS is allowed during the first two racing la...\n\ud83d\udd0d Retrieving chunks for query: T/F: DRS is allowed during the first two racing la...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 18,
+      "question": "T/F: Lapped cars may be instructed to overtake the Safety Car to unlap themselves before a restart.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Lapped cars may be instructed to overtake the...\n\ud83d\udd0d Retrieving chunks for query: T/F: Lapped cars may be instructed to overtake the...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 19,
+      "question": "T/F: In a dry race, using at least two different dry tyre compounds is mandatory (unless the race is shortened or declared wet).",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: In a dry race, using at least two different d...\n\ud83d\udd0d Retrieving chunks for query: T/F: In a dry race, using at least two different d...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 20,
+      "question": "T/F: Mid-race refuelling is permitted in modern F1.",
+      "expected": "FALSE",
+      "model_response": "TRUE",
+      "correct": false,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Mid-race refuelling is permitted in modern F1...\n\ud83d\udd0d Retrieving chunks for query: T/F: Mid-race refuelling is permitted in modern F1...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 21,
+      "question": "T/F: Gaining a position by going off track can result in a requirement to give the place back or a time penalty.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Gaining a position by going off track can res...\n\ud83d\udd0d Retrieving chunks for query: T/F: Gaining a position by going off track can res...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 22,
+      "question": "T/F: FIA stewards can issue time penalties that are added to a driver\u2019s total race time.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: FIA stewards can issue time penalties that ar...\n\ud83d\udd0d Retrieving chunks for query: T/F: FIA stewards can issue time penalties that ar...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 23,
+      "question": "T/F: Parc ferm\u00e9 literally translates from French as \u201cclosed park.\u201d",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Parc ferm\u00e9 literally translates from French a...\n\ud83d\udd0d Retrieving chunks for query: T/F: Parc ferm\u00e9 literally translates from French a...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 24,
+      "question": "T/F: A jump start can be penalized with a drive-through or a time penalty.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A jump start can be penalized with a drive-th...\n\ud83d\udd0d Retrieving chunks for query: T/F: A jump start can be penalized with a drive-th...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 25,
+      "question": "T/F: When the Safety Car\u2019s lights go out, the leader controls the pace for a restart that lap.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: When the Safety Car\u2019s lights go out, the lead...\n\ud83d\udd0d Retrieving chunks for query: T/F: When the Safety Car\u2019s lights go out, the lead...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 26,
+      "question": "T/F: Under a Virtual Safety Car, drivers must follow a prescribed delta time and reduce speed.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Under a Virtual Safety Car, drivers must foll...\n\ud83d\udd0d Retrieving chunks for query: T/F: Under a Virtual Safety Car, drivers must foll...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 27,
+      "question": "T/F: DRS use is always permitted in wet conditions if the zones are active.",
+      "expected": "FALSE",
+      "model_response": "TRUE",
+      "correct": false,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: DRS use is always permitted in wet conditions...\n\ud83d\udd0d Retrieving chunks for query: T/F: DRS use is always permitted in wet conditions...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 28,
+      "question": "T/F: Intermediates are typically marked green and full wets blue in F1\u2019s tyre color scheme.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Intermediates are typically marked green and ...\n\ud83d\udd0d Retrieving chunks for query: T/F: Intermediates are typically marked green and ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 29,
+      "question": "T/F: The Constructors\u2019 Championship is awarded to the driver who scores the most points in a season.",
+      "expected": "FALSE",
+      "model_response": "TRUE",
+      "correct": false,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: The Constructors\u2019 Championship is awarded to ...\n\ud83d\udd0d Retrieving chunks for query: T/F: The Constructors\u2019 Championship is awarded to ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 30,
+      "question": "T/F: A black-and-orange \u201cmeatball\u201d flag orders a driver to pit due to a mechanical issue.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A black-and-orange \u201cmeatball\u201d flag orders a d...\n\ud83d\udd0d Retrieving chunks for query: T/F: A black-and-orange \u201cmeatball\u201d flag orders a d...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 31,
+      "question": "T/F: A black-and-white flag is a warning for unsportsmanlike driving and has no immediate time penalty.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A black-and-white flag is a warning for unspo...\n\ud83d\udd0d Retrieving chunks for query: T/F: A black-and-white flag is a warning for unspo...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 32,
+      "question": "T/F: A red-and-yellow striped flag indicates a slippery track surface.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: A red-and-yellow striped flag indicates a sli...\n\ud83d\udd0d Retrieving chunks for query: T/F: A red-and-yellow striped flag indicates a sli...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 33,
+      "question": "T/F: The chequered flag signifies the end of a session or race.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: The chequered flag signifies the end of a ses...\n\ud83d\udd0d Retrieving chunks for query: T/F: The chequered flag signifies the end of a ses...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 34,
+      "question": "T/F: Standard Grand Prix race distance is approximately 305 km (with Monaco as the notable shorter exception).",
+      "expected": "FALSE",
+      "model_response": "TRUE",
+      "correct": false,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Standard Grand Prix race distance is approxim...\n\ud83d\udd0d Retrieving chunks for query: T/F: Standard Grand Prix race distance is approxim...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 35,
+      "question": "T/F: The pit-lane speed limit is identical at all circuits.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: The pit-lane speed limit is identical at all ...\n\ud83d\udd0d Retrieving chunks for query: T/F: The pit-lane speed limit is identical at all ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 36,
+      "question": "T/F: Teams in Formula 1 operate under a financial cost cap regulated by the FIA.",
+      "expected": "FALSE",
+      "model_response": "TRUE",
+      "correct": false,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Teams in Formula 1 operate under a financial ...\n\ud83d\udd0d Retrieving chunks for query: T/F: Teams in Formula 1 operate under a financial ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 37,
+      "question": "T/F: DRS may be used when a chasing car is within two seconds of the car in front at the detection point.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: DRS may be used when a chasing car is within ...\n\ud83d\udd0d Retrieving chunks for query: T/F: DRS may be used when a chasing car is within ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 38,
+      "question": "T/F: Grid position is normally determined by each driver\u2019s fastest lap in qualifying, barring penalties.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Grid position is normally determined by each ...\n\ud83d\udd0d Retrieving chunks for query: T/F: Grid position is normally determined by each ...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 39,
+      "question": "T/F: Telemetry sends real-time car data to engineers to monitor performance and reliability.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Telemetry sends real-time car data to enginee...\n\ud83d\udd0d Retrieving chunks for query: T/F: Telemetry sends real-time car data to enginee...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    },
+    {
+      "question_id": 40,
+      "question": "T/F: Weather variability (temperature, wind, rain) can significantly change tyre performance and pit strategy.",
+      "expected": "TRUE",
+      "model_response": "TRUE",
+      "correct": true,
+      "raw_response": "\ud83d\udd0d Querying index: T/F: Weather variability (temperature, wind, rain)...\n\ud83d\udd0d Retrieving chunks for query: T/F: Weather variability (temperature, wind, rain)...\n\ud83d\udd0d Trying FAISS retrieval...\n\u2705 FAISS retriev..."
+    }
+  ],
+  "comparison": {
+    "chunk_size_test_best": "size300_overlap100 (82.50%)",
+    "overlap_test_best": "size300_overlap50 (85.00%)",
+    "optimal_combination": "size300_overlap50 (85.00%)"
+  }
+}
