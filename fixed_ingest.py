@@ -11,7 +11,7 @@ from ollama_client import OllamaClient
 # PDF Reading and Chunking with Fallbacks
 # -----------------------------
 def _ocr_pdf_paddle(path: str) -> str:
-    """Final OCR fallback using PaddleOCR for scanned/image-only PDFs.":
+    """Final OCR fallback using PaddleOCR for scanned/image-only PDFs."""
     try:
         print("🔎 Attempting OCR with PaddleOCR...")
         # Import dependencies lazily to avoid hard requirements
@@ -69,7 +69,6 @@ def _ocr_pdf_paddle(path: str) -> str:
         return ""
 
 def read_pdf_fallback(path: str) -> str:
-    """Fallback PDF reading using alternative methods with OCR as final step"""
     print("🔄 Using fallback PDF reading method...")
     text = ""
     # Try with PyMuPDF (fitz)
@@ -533,9 +532,7 @@ def retrieve_with_fallback(query: str, index_dir: str, embed_model: str, ollama_
     except:
         return []
 
-# -----------------------------
-# Query Function with Comprehensive Fallbacks
-# -----------------------------
+
 def query_llm_fallback_simple(query: str, retrieved_chunks: List[dict]) -> str:
     """Simple fallback LLM query using basic text processing"""
     print("🔄 Using simple LLM fallback...")
@@ -584,7 +581,7 @@ def query_llm_fallback_keywords(query: str, retrieved_chunks: List[dict]) -> str
         print(f"❌ Keyword analysis fallback failed: {e}")
         return "Unable to determine answer"
 
-def query_index(query: str, index_dir: str, embed_model: str, ollama_url: str, top_k: int = 5):
+def query_index(query: str, index_dir: str, embed_model: str, ollama_url: str, chat_model: str = "llama3.2:1b", top_k: int = 5):
     """Query index with comprehensive fallback support"""
     print(f"🔍 Querying index: {query[:50]}...")
     
@@ -606,7 +603,7 @@ def query_index(query: str, index_dir: str, embed_model: str, ollama_url: str, t
         print("💬 Querying Ollama model...")
         client = OllamaClient(ollama_url)
         response = client.chat(
-            model=args.chat_model,  # using specified chat model
+            model=chat_model,  # using specified chat model
             messages=[{"role": "user", "content": prompt}]
         )
         print(f"\n✅ Model Response:\n{response}")
@@ -617,7 +614,7 @@ def query_index(query: str, index_dir: str, embed_model: str, ollama_url: str, t
         try:
             print("🔄 Trying fallback model...")
             response = client.chat(
-                model=args.chat_model,  # fallback model (same as primary)
+                model=chat_model,  # fallback model (same as primary)
                 messages=[{"role": "user", "content": prompt}]
             )
             print(f"\n✅ Fallback Model Response:\n{response}")
@@ -716,7 +713,7 @@ def main():
         if not args.outdir:
             print("❌ --outdir is required for query mode")
             return 1
-        query_index(args.query, args.outdir, args.embed_model, args.ollama_url)
+        query_index(args.query, args.outdir, args.embed_model, args.ollama_url, args.chat_model)
         return 0
 
     # ---------------- Ingest mode ----------------
