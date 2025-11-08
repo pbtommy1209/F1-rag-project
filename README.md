@@ -1,3 +1,4 @@
+https://github.com/pbtommy1209/F1-rag-project/tree/main#
 # RAG (Retrieval-Augmented Generation) System
 
 A comprehensive RAG system that processes documents (including scanned PDFs via OCR) and provides interactive chatbot interfaces for querying knowledge bases. Supports multiple Ollama models with optimized chunking strategies and comprehensive evaluation tools.
